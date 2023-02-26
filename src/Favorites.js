@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import FavoriteGrid from './Components/FavoriteGrid'
 import { useParams } from 'react-router-dom'
 
+// Creates the Favorites Page
 const Favorites = () => {
 
   return <>

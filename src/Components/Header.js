@@ -4,7 +4,6 @@ import "./Header.css"
 import Favorites from "../Favorites";
 
 
-
 const Header = () => {
   return (
     <nav className="Header">

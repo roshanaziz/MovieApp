@@ -3,7 +3,8 @@ import { AppContext } from './Context';
 import "./Components/Search.css"
 import {FiSearch} from "react-icons/fi";
 
-export const Search = () => {
+// Creates and Controls the Search Bar
+const Search = () => {
   const {query,setQuery,isError} = useContext(AppContext)
 
   return <>

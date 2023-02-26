@@ -10,6 +10,7 @@ import {NotificationContainer} from "react-notifications";
 
 const App = () => {
   return <>
+  {/* Notification Creator */}
   <div>
     <NotificationContainer/>
   </div>
@@ -17,7 +18,6 @@ const App = () => {
       <Route path="/" element = {<Home/>}/>
       <Route path="/movie/:id" element={<SingleMovie/>} />
       <Route path='/Favorites' element={<Favorites/>}/>
-      {/* <Route path = "*" element={<Error />} /> */}
     </Routes>
 
   </>

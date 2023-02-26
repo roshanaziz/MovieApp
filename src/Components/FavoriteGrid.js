@@ -4,7 +4,7 @@ import { AppContext } from '../Context'
 import { Link, NavLink, useParams } from 'react-router-dom'
 import { useNavigate, redirect} from 'react-router-dom'
 
-
+// Creates a grid of favorites
  const FavoriteGrid = () => {
     let navigate = useNavigate();
   const {favorites} = useContext(AppContext)

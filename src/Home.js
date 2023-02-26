@@ -6,6 +6,7 @@ import "./App.css"
 import MoviesGrid from './Components/MoviesGrid'
 import Search from './Search'
 
+// Creates the Home Page
 const Home = () => {
   return<>
     <div><Header/></div>

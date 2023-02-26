@@ -8,33 +8,31 @@ import { AiFillHeart } from "react-icons/ai";
 import Movies from './Components/Movies';
 import {NotificationManager} from "react-notifications";
 
+
+// Creates the Individual Movie Page
 const SingleMovie = () => {
   let location = useLocation();
-    const {id} = useParams();
-    // console.log("loc is",location)
-    let data = location?.state;
-  //  console.log("data",data);
-   const {curMovie,props} = data;
+  const {id} = useParams();
+  let data = location?.state;
+  const {curMovie,props} = data;
 
 
-   const {imdbID, Title,Type, Year, Poster} = curMovie;
-   const {favorites,setFavorites} = useContext(AppContext);
-   const {exists,setExists} = useState(false);
+  const {imdbID, Title,Type, Year, Poster} = curMovie;
+  const {favorites,setFavorites} = useContext(AppContext);
+  const {exists,setExists} = useState(false);
 
-    const showError = () => {
-      NotificationManager.error("Removed from Favorites","",1000)
-    };
+  const showError = () => {
+    NotificationManager.error("Removed from Favorites","",1000)
+  };
 
-    const showSuccess = () => {
-      NotificationManager.success("Added to Favorites","",1000)
-    };
-
-
-   console.log(favorites);
+  const showSuccess = () => {
+    NotificationManager.success("Added to Favorites","",1000)
+  };
 
   return <>
   <div><Header/></div>
-  <div>   
+  <div>
+    {/* Allows to Add and Remove Movies from Favorites    */}
     <button 
     className="heart"
     onClick={() => {
@@ -56,10 +54,6 @@ const SingleMovie = () => {
           showSuccess()
           localStorage.setItem('react-movie-app-favorites',JSON.stringify(newFavoriteList))
           }
-          
-      //   }
-      // })
-
 
     } }
     ><AiFillHeart style={{color: 'white'}}/></button>         

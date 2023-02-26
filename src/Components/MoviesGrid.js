@@ -4,7 +4,7 @@ import { AppContext } from '../Context'
 import { Link, NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
-
+ // Creates the Grid for Movies on the Home Page
  const MoviesGrid = (props) => {
     let navigate = useNavigate();
   const {movie} = useContext(AppContext)
