@@ -1,0 +1,46 @@
+.mCard{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mPoster{
+    height: 400px;
+    border-radius: 10%;
+}
+
+
+
+.mName{
+    max-width: 100%;
+    width: auto;
+    font-size: 30px;
+    /* color: red; */
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+.mYear{
+    margin-top: -2.5rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.type{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: red;
+}
+
+.heart{
+    background-color: black;
+    font-size: 50px;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}

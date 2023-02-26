@@ -1,0 +1,51 @@
+.Header{
+    width: 100%;
+    height: 8rem;
+    margin-top: -3rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5rem 3fr 2fr 10rem;
+}
+
+
+.Logo{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    color: red;
+    grid-column: 2/3;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Options{
+    grid-column: 3/4;
+}
+
+.Options ul{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.Options ul li a{
+    color: red;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.Options ul li a:active{
+    text-decoration: underline;
+}
+
+.Options ul li a:hover{
+    text-decoration: underline;
+}
+
+
